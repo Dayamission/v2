@@ -1,1 +1,312 @@
+/* ==========================================
+   Daya Mission Website
+   Version 2.0
+========================================== */
 
+:root{
+    --primary:#005B73;
+    --secondary:#F79400;
+    --light:#F5F7F8;
+    --dark:#1F2937;
+    --white:#ffffff;
+}
+
+/* ========= GENERAL ========= */
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:var(--dark);
+    line-height:1.7;
+    padding-top:90px;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight:700;
+}
+
+p{
+    font-size:16px;
+}
+
+section{
+    padding:80px 0;
+}
+
+/* ========= NAVBAR ========= */
+
+.navbar{
+    background:#fff;
+    transition:.3s;
+}
+
+.logo{
+    width:65px;
+    margin-right:12px;
+}
+
+.brand-text h2{
+    margin:0;
+    color:var(--primary);
+    font-size:28px;
+    line-height:1;
+}
+
+.brand-text p{
+    margin:0;
+    color:var(--secondary);
+    font-style:italic;
+    font-size:14px;
+}
+
+.nav-link{
+    font-weight:500;
+    margin-left:10px;
+}
+
+.nav-link:hover{
+    color:var(--secondary)!important;
+}
+
+.donate-btn{
+    margin-left:15px;
+    border-radius:30px;
+    padding:10px 22px;
+    font-weight:600;
+}
+
+/* ========= HERO ========= */
+
+.hero-image{
+    height:88vh;
+    object-fit:cover;
+    filter:brightness(55%);
+}
+
+.carousel-caption{
+    bottom:18%;
+}
+
+.carousel-caption h5{
+    color:#FFD166;
+    font-family:'Merriweather',serif;
+}
+
+.carousel-caption h1{
+    font-size:58px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.carousel-caption p{
+    max-width:750px;
+    margin:auto;
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.hero-buttons .btn{
+    margin:5px;
+    border-radius:30px;
+    padding:14px 30px;
+    font-weight:600;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    width:45px;
+    height:45px;
+}
+
+.carousel-indicators button{
+    width:12px!important;
+    height:12px!important;
+    border-radius:50%;
+}
+
+/* ========= WELCOME ========= */
+
+.welcome h2{
+    color:var(--primary);
+    margin-bottom:20px;
+}
+
+.welcome img{
+    border-radius:15px;
+}
+
+/* ========= MISSION ========= */
+
+.mission{
+    background:var(--light);
+}
+
+.mission h2{
+    color:var(--primary);
+}
+
+.card{
+    border:none;
+    border-radius:15px;
+    transition:.35s;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+}
+
+.card i{
+    color:var(--secondary);
+}
+
+/* ========= BUTTONS ========= */
+
+.btn-warning{
+    background:var(--secondary);
+    border:none;
+}
+
+.btn-warning:hover{
+    background:var(--primary);
+    color:#fff;
+}
+
+.btn-outline-light:hover{
+    background:var(--secondary);
+    border-color:var(--secondary);
+}
+
+/* ========= SECTION TITLES ========= */
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:var(--primary);
+}
+
+.section-title p{
+    color:#666;
+}
+
+/* ========= FOOTER ========= */
+
+footer{
+    background:var(--primary);
+    color:white;
+    padding:60px 0 20px;
+}
+
+footer a{
+    color:white;
+    text-decoration:none;
+}
+
+footer a:hover{
+    color:#FFD166;
+}
+
+.footer-bottom{
+    margin-top:30px;
+    border-top:1px solid rgba(255,255,255,.2);
+    padding-top:20px;
+    text-align:center;
+}
+
+/* ========= ANIMATION ========= */
+
+.card,
+.btn{
+    transition:.3s;
+}
+
+/* ========= MOBILE ========= */
+
+@media(max-width:992px){
+
+.hero-image{
+    height:70vh;
+}
+
+.carousel-caption h1{
+    font-size:40px;
+}
+
+.carousel-caption p{
+    font-size:18px;
+}
+
+}
+
+@media(max-width:768px){
+
+body{
+    padding-top:80px;
+}
+
+.logo{
+    width:55px;
+}
+
+.brand-text h2{
+    font-size:22px;
+}
+
+.brand-text p{
+    font-size:12px;
+}
+
+.hero-image{
+    height:60vh;
+}
+
+.carousel-caption{
+    bottom:10%;
+}
+
+.carousel-caption h1{
+    font-size:30px;
+}
+
+.carousel-caption p{
+    font-size:15px;
+}
+
+.hero-buttons .btn{
+    display:block;
+    margin:10px auto;
+    width:220px;
+}
+
+section{
+    padding:60px 0;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero-image{
+    height:55vh;
+}
+
+.carousel-caption h5{
+    font-size:14px;
+}
+
+.carousel-caption h1{
+    font-size:24px;
+}
+
+.carousel-caption p{
+    font-size:14px;
+}
+
+}
