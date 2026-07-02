@@ -1031,6 +1031,25 @@ footer .col-lg-4{
 
 }
 
+/* Fade-in animation */
+
+.fade-section{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:all .8s ease;
+
+}
+
+.fade-section.animate{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
 
 /* =====================================================
    END OF STYLE SHEET
